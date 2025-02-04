@@ -5,7 +5,7 @@ const result = document.querySelector('.result');
 form.addEventListener('submit', (event) =>{
   event.preventDefault();
     
-  if(form.question1.value === 'B'){
+  if(form.question3.value === 'B'){
     Swal.fire({
       title: "Are you sure?",
       text: "You can submit again girl.",
@@ -21,17 +21,17 @@ form.addEventListener('submit', (event) =>{
           icon: "success",
           draggable: true
         });
-        if(form.question3.value === 'A'){
-          Swal.fire({
-            title: "I love You!",
-            text: "តាមសធាជ្រះថ្លា.",
-            imageUrl: "Qr.jpg",
-            imageWidth: 400,
-            imageHeight: 400,
-            imageAlt: "Custom image"
-          });
-        }
       }
+    });
+  }
+  if(form.question3.value === 'A'){
+    Swal.fire({
+      title: "I love You!",
+      text: "តាមសធាជ្រះថ្លា.",
+      imageUrl: "Qr.jpg",
+      imageWidth: 400,
+      imageHeight: 400,
+      imageAlt: "Custom image"
     });
   }
 
